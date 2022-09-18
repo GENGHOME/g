@@ -5,11 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GENGHOME</title>
-    <link rel="shortcut icon" href="./ico/小绵羊.ico" />
+    <link rel="shortcut icon" href="ico/小绵羊.ico" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/index.css" -->
+    <style>
+      @import url(css/index.css);
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
   </head>
   <body>
     <h2>标题</h2>
-    <p>测试网页</p>
+    <div style="color: red">测试网页</div>
+    <p style="color: yellowgreen">测试样式行内标签</p>
     <strong>加粗</strong>
     <em>斜字体</em>
     <del>删除线</del>
@@ -163,7 +172,7 @@
       </tr>
     </table>
     <hr />
-    <form action="后端地址">
+    <form action="后端地址" method="post">
       用户名：<input
         type="text"
         placeholder="请输入你的用户名"
@@ -173,8 +182,13 @@
         type="password"
         placeholder="请输入你的密码"
         name="password"
-      />
-      <input type="submit" value="登录" />
+      /><br />
+      <!-- <input type="submit" value="登录" /> -->
+      <button type="submit">登录</button>
+      <button type="submit">注册</button>
+      <input type="button" value="test" />
+      <button type="reset">重置</button>
     </form>
+    <div>111111111111111</div>
   </body>
 </html>
