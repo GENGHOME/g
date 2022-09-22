@@ -1,194 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GENGHOME</title>
-    <link rel="shortcut icon" href="ico/小绵羊.ico" />
-    <!-- <link rel="stylesheet" type="text/css" href="css/index.css" -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <style>
-      @import url(css/index.css);
-      * {
-        margin: 0;
-        padding: 0;
-      }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+
+            width: 450px;
+            margin: auto;
+
+
+        }
+
+        ul {
+            list-style: none;
+
+        }
+
+        .box>li {
+            float: left;
+            background: rgb(96, 152, 189);
+            width: 147px;
+            text-align: center;
+            border: 1px solid;
+            color: white;
+            line-height: 30px;
+        }
+
+        .box>li:hover {
+            background: rgb(155, 178, 255);
+
+
+        }
+
+        .box>li>ul {
+            display: none;
+            background: white;
+            color: rgb(155, 215, 255);
+        }
+
+        .box>li:hover ul {
+            display: block;
+        }
+
+        .box>li>ul>li:hover {
+            background: rgb(155, 215, 255);
+            color: white;
+        }
+
+        .box>li>ul {
+            font-size: 13px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:link {
+            color: rgb(155, 215, 255);
+        }
+
+        a:hover {
+            color: white;
+        }
     </style>
-  </head>
-  <body>
-    <h2>标题</h2>
-    <div style="color: red">测试网页</div>
-    <p style="color: yellowgreen">测试样式行内标签</p>
-    <strong>加粗</strong>
-    <em>斜字体</em>
-    <del>删除线</del>
-    <hr noshade color="pink" width="520" />
 
-    线
-    <center>居中</center>
-    <hr />
-    <h3>体育<span style="color: yellowgreen">sports</span></h3>
-    <ol>
-      <li>第一行</li>
-      <li>第二行</li>
-      <li>第三行</li>
-    </ol>
-    <ol type="a">
-      <li>第一行</li>
-      <li>第二行</li>
-      <li>第三行</li>
-    </ol>
-    <ol type="a" start="4">
-      <li>第一行</li>
-      <li>第二行</li>
-      <li>第三行</li>
-    </ol>
-    <ul>
-      <li>111111111</li>
-      <li>222222222</li>
-      <li>333333333</li>
-    </ul>
-    <ul type="disc">
-      <li>111111111</li>
-      <li>222222222</li>
-      <li>333333333</li>
-    </ul>
-    <ul type="circle">
-      <li>111111111</li>
-      <li>222222222</li>
-      <li>333333333</li>
-    </ul>
-    <ul type="square">
-      <li>111111111</li>
-      <li>222222222</li>
-      <li>333333333</li>
-    </ul>
-    <ul type="none">
-      <li>111111111</li>
-      <li>222222222</li>
-      <li>333333333</li>
-    </ul>
-    <dl>
-      <dt>
-        <hr />
-        <img
-          src="./ico/小绵羊.ico"
-          alt="图片加载失败"
-          width="128"
-          height="128"
-        />
-      </dt>
-      <dd>小绵羊</dd>
-    </dl>
+</head>
 
-    <a href="douniwan.html" title="华广软件" target="_blank">
-      <img src="./img/qd.png" alt=" " width="128" height="128" />
-    </a>
+<body>
+    <ul class="box">
+        <li>
+            Autodesk CAD
+            <ul>
+                <li><a href="https://www.aliyundrive.com/s/axELWZEaBhQ" target="_blank">CAD2023</a></li>
+                <li><a href="https://www.aliyundrive.com/s/1h3bJx1yLrg" target="_blank">CAD2022</a></li>
+                <li><a href="https://www.aliyundrive.com/s/5U4nzYTpwYT" target="_blank">CAD2021</a></li>
+            </ul>
+        </li>
 
-    <table
-      border="1"
-      bordercolor="black"
-      width="50%"
-      height="300"
-      align="center"
-      bgcolor="grey"
-      cellspacing="0"
-    >
-      <tr bgcolor="orange" height="100" align="center">
-        <td>1</td>
-        <td>2</td>
-      </tr>
-      <tr valign="bottom" align="center">
-        <td>3</td>
-        <td>4</td>
-      </tr>
-    </table>
-    <hr />
-    <table
-      border="1"
-      bordercolor="black"
-      width="50%"
-      height="300"
-      align="center"
-      bgcolor="yellow"
-      cellspacing="0"
-    >
-      <tr>
-        <td width="500" height="100">1</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td bgcolor="green">3</td>
-        <td align="right" valign="top">4</td>
-      </tr>
-    </table>
-    <table border="1" width="500" height="500" align="center">
-      <tr>
-        <td>不毛</td>
-        <td colspan="2" rowspan="2">魏国</td>
-        <!-- <td>辽东</td> -->
-      </tr>
-      <tr>
-        <td rowspan="2">属国</td>
-        <!-- <td colspan="2">西凉</td> -->
-        <!-- <td>幽州</td> -->
-      </tr>
-      <tr>
-        <!-- <td>南中</td> -->
-        <td colspan="2">吴国</td>
-        <!-- <td>荆州</td> -->
-      </tr>
-    </table>
-    <hr />
-    <table
-      border="1"
-      bordercolor="red"
-      cellspacing="0"
-      width="800"
-      height="400"
-      align="center"
-    >
-      <tr height="50">
-        <td width="100" align="center">会员姓名</td>
-        <td width="150"></td>
-        <td width="100" align="center">出生日期</td>
-        <td width="150"></td>
-      </tr>
-      <tr height="50">
-        <td align="center">身份证号</td>
-        <td colspan="3"></td>
-      </tr>
-      <tr height="50">
-        <td align="center">通信地址</td>
-        <td colspan="3"></td>
-      </tr>
-      <tr height="50">
-        <td align="center">联系电话</td>
-        <td colspan="3"></td>
-      </tr>
-      <tr height="50">
-        <td align="center">会员卡号</td>
-        <td colspan="3"></td>
-      </tr>
-    </table>
-    <hr />
-    <form action="后端地址" method="post">
-      用户名：<input
-        type="text"
-        placeholder="请输入你的用户名"
-        name="username"
-      />
-      <br />密&emsp;码：<input
-        type="password"
-        placeholder="请输入你的密码"
-        name="password"
-      /><br />
-      <!-- <input type="submit" value="登录" /> -->
-      <button type="submit">登录</button>
-      <button type="submit">注册</button>
-      <input type="button" value="test" />
-      <button type="reset">重置</button>
-    </form>
-    <div>111111111111111</div>
-  </body>
+        <li>
+            Adobe Photoshop
+            <ul>
+                <li>Photoshop2023</li>
+                <li>Photoshop2022</li>
+                <li>Photoshop2021</li>
+            </ul>
+        </li>
+
+        <li>Adobe illustrator
+            <ul>
+                <li>illustrator2023</li>
+                <li>illustrator2022</li>
+                <li>illustrator2021</li>
+            </ul>
+        </li>
+
+    </ul>
+</body>
+
 </html>
